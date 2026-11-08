@@ -10,25 +10,25 @@ cask "fulcrum" do
     end
   end
 
-  version "0.2.0"
+  version "0.3.0"
 
   on_macos do
     on_arm do
-      sha256 "6b67d20b140759091d91237ce167d4654551d6465c2b1e9e5d3b8a2b8d655d70"
+      sha256 "5a19339031a9a6f33ace3f7685f6b591fda87a945413e6fbe7dc5b683b4dff14"
       url "https://github.com/headwayio/fulcrum-cli/releases/download/v#{version}/fulcrum_Darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "9a30466b2c69215989a04e6750d0c024d0195747708acf870d642c2695a52b0a"
+      sha256 "90f0a60e625c83659f70e31a2b06489246eb19540621e352de6b8e2bba0b1270"
       url "https://github.com/headwayio/fulcrum-cli/releases/download/v#{version}/fulcrum_Darwin_x86_64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "afe06d47191e78b24cd010d48f23efe5f2168e87c1c93fdec1cfca6acd08eedc"
+      sha256 "9c150d8e66b373137ccb258aa990d77ed7b91b32092bcb9e91eb780d2eb7cf05"
       url "https://github.com/headwayio/fulcrum-cli/releases/download/v#{version}/fulcrum_Linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "cdc67bd014f0fc57fa7a5f60ff91796b306b767d805d38111f1575256a5a50f1"
+      sha256 "826abc942ee2bab59baa71ec83983a70cf3c8577f8f51f55e17253556c47781e"
       url "https://github.com/headwayio/fulcrum-cli/releases/download/v#{version}/fulcrum_Linux_x86_64.tar.gz"
     end
   end
@@ -43,5 +43,5 @@ cask "fulcrum" do
 
   binary "fulcrum"
 
-  # No zap stanza required
+  zap :not_required
 end
